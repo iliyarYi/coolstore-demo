@@ -85,8 +85,6 @@ fi
 echo Docker build finished.
 echo
 
-rm Dockerfile
-
 echo
 echo "==================================================================================="
 echo "=                                                                                 ="
