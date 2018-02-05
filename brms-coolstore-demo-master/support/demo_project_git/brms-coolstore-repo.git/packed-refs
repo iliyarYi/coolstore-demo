@@ -1,0 +1,3 @@
+# pack-refs with: peeled fully-peeled 
+0f2b79edb53b0a76e86ee4dd6ef3869e6071a558 refs/heads/feature/upgrade-kie-maven-plugin
+cda0af11ee1122f104051caa7df23b7acc4421a6 refs/heads/master
