@@ -48,6 +48,7 @@ COPY support/standalone.xml $BRMS_HOME/standalone/configuration/
 COPY support/application-roles.properties $BRMS_HOME/standalone/configuration/
 COPY support/application-users.properties $BRMS_HOME/standalone/configuration/
 
+USER root
 # Create users.
 RUN $BRMS_HOME/bin/add-user.sh -a -r ApplicationRealm -u brmsAdmin -p jbossbrms1! -ro analyst,admin,manager,user,kie-server,kiemgmt,rest-all --silent \
   && $BRMS_HOME/bin/add-user.sh -a -r ApplicationRealm -u erics -p jbossbrms1! -ro analyst,admin,manager,user,kie-server,kiemgmt,rest-all --silent
