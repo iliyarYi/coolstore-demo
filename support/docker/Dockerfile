@@ -42,7 +42,7 @@ RUN rm -rf $BRMS_HOME/bin/.niogit/coolstore-demo.git && git clone --bare https:/
 USER 1000
 
 COPY projects /opt/jboss/brms-projects
-#COPY support/libs /opt/jboss/brms-projects/libs
+COPY support/libs /opt/jboss/brms-projects/libs
 COPY support/userinfo.properties $BRMS_HOME/standalone/deployments/business-central.war/WEB-INF/classes/
 COPY support/standalone.xml $BRMS_HOME/standalone/configuration/
 COPY support/application-roles.properties $BRMS_HOME/standalone/configuration/
